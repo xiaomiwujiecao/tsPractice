@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.symbol"
+    ]
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": [
+    "node_modules"
+  ]
+}
