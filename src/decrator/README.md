@@ -405,9 +405,9 @@ console.log(greeter.greet())
 
 参数装饰器应用于类构造函数或方法声明的函数。
 
-参数修饰符不能在声明文件，重载或任何其他环境上下文（例如，声明类）中使用。
+参数修饰符不能在声明文件,重载或任何其他环境上下文(例如,声明类)中使用。
 
-参数装饰器的表达式将在运行时作为函数调用，并带有以下三个参数：
+参数装饰器的表达式将在运行时作为函数调用,并带有以下三个参数：
 
 - 静态成员的类的构造函数或实例成员的类的原型。
 
@@ -417,7 +417,7 @@ console.log(greeter.greet())
 
 参数装饰器的返回值将被忽略。
 
-以下是将参数修饰符（`@required`）应用于BugReport类成员的参数的示例：
+以下是将参数修饰符(`@required`)应用于BugReport类成员的参数的示例：
 
 ```ts
 import "reflect-metadata"
@@ -466,11 +466,11 @@ class BugReport {
 
 ## 元数据
 
-一些示例使用了反射元数据库，该库为实验性元数据API添加了polyfill。
+一些示例使用了反射元数据库,该库为实验性元数据API添加了polyfill。
 
-该库尚未成为ECMAScript（JavaScript）标准的一部分。
+该库尚未成为ECMAScript(JavaScript)标准的一部分。
 
-但是，一旦装饰器被正式采纳为ECMAScript标准的一部分，这些扩展将被提议采用。
+但是,一旦装饰器被正式采纳为ECMAScript标准的一部分,这些扩展将被提议采用。
 
 您可以通过npm安装此库：
 
@@ -483,9 +483,9 @@ npm i reflect-metadata --save
 yarn add reflect-metadata --save
 ```
 
-TypeScript包含实验性支持，用于为具有修饰符的声明发出某些类型的元数据。
+TypeScript包含实验性支持,用于为具有修饰符的声明发出某些类型的元数据。
 
-要启用此实验性支持，必须在命令行上或在tsconfig.json中设置embedDecoratorMetadata编译器选项：
+要启用此实验性支持,必须在命令行上或在tsconfig.json中设置embedDecoratorMetadata编译器选项：
 
 
 ```shell
@@ -503,7 +503,7 @@ ts 配置文件:
   }
 }
 ```
-启用后，只要导入了反射元数据库，就会在运行时公开其他设计时类型信息。
+启用后,只要导入了反射元数据库,就会在运行时公开其他设计时类型信息。
 
 我们可以在下面的示例中看到这一点：
 
